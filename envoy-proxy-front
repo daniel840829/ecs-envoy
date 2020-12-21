@@ -1,0 +1,4 @@
+FROM envoyproxy/envoy-alpine-debug:v1.16-latest
+COPY front-envoy.yaml /etc/envoy/front-envoy.yaml
+CMD /usr/local/bin/envoy -c /etc/envoy/front-envoy.yaml
+
